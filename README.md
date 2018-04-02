@@ -1,4 +1,4 @@
-# Django-AngularJs-Fibonacci Series Generator using Django-restframework
+# Django-AngularJs-Fibonacci Series Generator using Django-restframework - AWS ngnix configuration
 
 #### Create ubuntu instance - add http and https rules in the configurationgroups
 

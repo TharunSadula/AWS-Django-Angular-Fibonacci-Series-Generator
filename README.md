@@ -125,7 +125,7 @@ https://thepracticalsysadmin.com/nginx-self-signed-cert/
 
 HOW TO USE IT?
 
-Click on the https://18.221.142.31/
+Click on the website Link
 
 Click on 'ADVANCED' and then click on 'Proceed to 18.221.142.31 (unsafe)'
 

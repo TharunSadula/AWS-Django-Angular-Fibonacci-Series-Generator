@@ -1,0 +1,38 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Fibonacci Calculator">
+    <meta name="author" content="Tharun">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Fibonacci Series Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="{% static 'core/core.js' %}"></script>
+</head>
+<body ng-app="core" >
+
+        {% verbatim %}
+        <div style="min-height:150px" class="container" ng-controller="coreController">
+            <h2> Fibonacci Series Generator</h2>
+            <form name="calculate" >
+         <div style="float:none" class="container form-group col-md-6">
+         <label style="display:block"><b>Enter number</b></label>
+             <input type="number" class="form-control" ng-change="erase()" min="1" max="20"  placeholder="1-20" ng-model="fibnumber" />
+
+
+          <button ng-click="getfib(calculate)" type="submit">Generate</button>
+             <div ng-if='result && fibnumber'>Fibonacci series is {{result}}</div>
+         </div>
+         </form>
+        </div>
+        {% endverbatim %}
+
+
+</body>
+</html>
